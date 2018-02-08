@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="img\logo1.jpg" />
+  	<title> &#8286; SVN &rarr; Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/glyphicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/myscript.js"></script>
+  </head>
+  <body>
+    <div id="main" class="clearfix">
+      <header>
+
+        <!-- navigation bar starts here-->
+
+       <nav class="navbar">
+          <div class="container">
+            <div class="navbar-header">
+
+              <!-- button for hiding -->
+
+              <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" title="SVN School" alt="SVN">
+              </a>
+            </div>
+            <!-- navbar hiding button-->
+            <button id="menu_button" class="glyphicon glyphicon-menu-hamburger clearfix" type="button"></button>
+            <!-- hiding button ens here-->
+            <div class="navbar-nav">
+              <ul class="clearfix">
+              <!-- navigation keys -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="getInvolve.html">Get Involved</a></li>
+                <li><a href="" target="_top"><span class="bold">Contact Us</span></a></li>
+              </ul> 
+              <!--navigation keys end-->
+            </div>
+          </div>
+        </nav>    
+        <!--navigation bar End-->  
+      </header>
+      <button class="glyphicon glyphicon-menu-up" id="moveTop" type="button" onclick="moveTop();" title="Go To Top">
+      </button>
+      <!-- Containt of the page -->
+      <div class="theme_img3">
+        <div class="slogans">
+          <h1>Contact Us</h1>
+        </div>
+      </div>
+      <div class="container give_margin">
+        <div class="form_contact">
+          <form action="mailto:vibhanshu09@outlook.com" method="post" enctype="text/plain">
+            <label>Your Name <span class="required">*</span></label><br/>
+            <input type="text" name="Name" placeholder="Enter Your Full Name" required><br/>
+            <label>Your Email <span class="required">*</span></label><br/>
+            <input type="email" name="Email" placeholder="Enter Your E-mail" required><br/>
+            <label>Subject</label><br/>
+            <input type="text" name="Subject" placeholder="Subject"><br/>
+            <label>Your Message</label><br/>
+             <textarea name="message" rows="10" cols="30" max-width="50" maxheight="50"></textarea><br/>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+          </form>
+        </div>
+        <div class="form_details">
+          <h3>Email:</h3>
+          <p><span class="fa fa-envelope-o"></span><span class="mail_me">info@shantividyaniketan.org</span></p><br>
+          <h3>Write to us:</h3>
+          <p>Back of Banaras Pebble Bay,<br>Sant Asharam Nagar,<br>Katara Hills, Bagmugaliya<br>Bhopal, M.P. (462043)</p>
+          <p><span class="fa fa-phone"></span><span class="mail_me">+91 93031 30906</span></p>
+        </div>
+      </div>
+      <span class="clearfix"></span>
+      <footer>
+        <div class="footer1">
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="https://www.btplc.com/mydonate/index.aspx" target="_blank">Donate</a></li>
+            <li><a href="" target="_top">Contact Us</a></li>
+            <li><a href="volenteer.html">Volunteer</a></li>
+          </ul>
+          <div class="social">Follow us :- 
+            <a href="https://www.facebook.com/vibhanshu.rai" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/Reeshanrai" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/Vibhanshurai" class="fa fa-linkedin"></a>
+            <a href="https://www.google.com/reeshanrai" class="fa fa-google-plus"></a>
+          </div>
+          <div class="footer2">&copy; Shanti Vidya Niketan<span class="glyphicon glyphicon-king pull-right">&nbsp;Vibhanshu Rai &nbsp;</span></div>
+        </div>
+      </footer>
+    </div> <!-- Main close -->
+    <script type="text/javascript" src="js/jquery.1.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("#menu_button").click(function(e){
+          e.preventDefault();
+          $(this).siblings(".navbar-nav").slideToggle();
+          $(".contactus a").attr('href','contact.html');
+          $(".contactus a span").addClass('hide');
+        });
+        
+        $(window).resize(function(){
+          if($(this).outerWidth()>768){
+            $(".navbar-nav").css({"display":"block"});
+            $(".contactus a").attr('href','#');
+            $(".contactus a span").removeClass('hide');
+          }else{
+            $(".navbar-nav").css({"display":"none"});
+
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

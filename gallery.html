@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="img\logo1.jpg" />
+  	<title> &#8286; SVN &rarr; Gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/glyphicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/myscript.js"></script>
+  </head>
+  <body>
+    <div id="main" class="clearfix">
+      <header>
+
+        <!-- navigation bar starts here-->
+
+       <nav class="navbar">
+          <div class="container">
+            <div class="navbar-header">
+
+              <!-- button for hiding -->
+
+              <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" title="SVN School" alt="SVN">
+              </a>
+            </div>
+            <!-- navbar hiding button-->
+            <button id="menu_button" class="glyphicon glyphicon-menu-hamburger clearfix" type="button"></button>
+            <!-- hiding button ens here-->
+            <div class="navbar-nav">
+              <ul class="clearfix">
+              <!-- navigation keys -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href=""><span class="bold">Gallery</span></a></li>
+                <li><a href="getInvolve.html">Get Involved</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul> 
+              <!--navigation keys end-->
+            </div>
+          </div>
+        </nav>    
+        <!--navigation bar End-->  
+      </header>
+      <button class="glyphicon glyphicon-menu-up" id="moveTop" type="button" onclick="moveTop();" title="Go To Top">
+      </button>
+      <!-- Containt of the page -->
+      <div class="theme_img">
+      	<div class="slogans">
+      		<h1>Gallery</h1>
+      		<p>Photos and galleries showcasing the work of SVN Schools</p>
+      		<div class="container">
+      			<button class="glyphicon glyphicon-menu-down" id="moveDown" type="button" onclick="moveDown();" title="View Gallery">
+      			</button>
+      		</div>
+      	</div>
+      </div>
+      <span class="clearfix"></span>
+      <div class="container" style="margin-top: 150px;">
+      	<div class="Gallery_containt">
+      		<h1>A tour to SVN</h1>
+      		<p>In January 2016 photographer Mr. Sonu Kumar toured to our school with SVN staff and his photos are amazing. You can view more of Sonu's photos in the massive album on <a href="href://www.instagram.com/reeshanrai">Instagram</a></p>
+      	</div>
+      </div>
+      <div class="container">
+
+      	<div class="img_col">
+  			<img src="img/gallery/img2.jpg" alt="Children working in the library" title="Children working in the library" onclick="showmodel(this);" id="img002">
+  			<div class="overlay">
+  				<div class="text">
+  					Children working in the library.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img3.jpg" alt="Boy working in the library" title="Boy working in the library" onclick="showmodel(this);" id="img003">
+  			<div class="overlay">
+  				<div class="text">
+  					Boy working in the library.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img4.jpg" alt="Boys by the volleyball net" title="Boys by the volleyball net"  onclick="showmodel(this);" id="img004">
+  			<div class="overlay">
+  				<div class="text">
+  					Boys by the volleyball net.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img5.jpg" alt="Chris Howorth, Founder SVN" title="Chris Howorth, Founder SVN"  onclick="showmodel(this);" id="img005">
+  			<div class="overlay">
+  				<div class="text">
+  					Chris Howorth, Founder SVN.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img6.jpg" alt="Children outside SVN School" title="Children outside SVN School"  onclick="showmodel(this);" id="img006">
+  			<div class="overlay">
+  				<div class="text">
+  					Children outside SVN School.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img7.jpg" alt="Boy tacking notes in class" title="Boy tacking Note in class"  onclick="showmodel(this);" id="img006">
+  			<div class="overlay">
+  				<div class="text">
+  					Boy tacking Note in class.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img8.jpg" alt="Smilling boys in class" title="Smilling boys in class"  onclick="showmodel(this);" id="img008">
+  			<div class="overlay">
+  				<div class="text">
+  					Smilling boys in class.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img9.jpg" alt="Girl tacking notes in class" title="Girl tacking note in class"  onclick="showmodel(this);" id="img009">
+  			<div class="overlay">
+  				<div class="text">
+  					Girl tacking note in class.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img10.jpg" alt="Children with SVN schoolbag" title="Children with SVN schoolbag"  onclick="showmodel(this);" id="img010">
+  			<div class="overlay">
+  				<div class="text">
+  					Children with SVN schoolbag.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img11.jpg" alt="Boy working in class" title="Boy working in class"  onclick="showmodel(this);" id="img011">
+  			<div class="overlay">
+  				<div class="text">
+  					Boy working in class.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img12.jpg" alt="Children on there way to school" title="Children on there way to school"  onclick="showmodel(this);" id="img012">
+  			<div class="overlay">
+  				<div class="text">
+  					Children on there way to school.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img13.jpg" alt="3 children playing Kitcham" title="3 children playing Kitcham"  onclick="showmodel(this);" id="img013">
+  			<div class="overlay">
+  				<div class="text">
+  					3 children playing Kitcham.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  					
+  			<img src="img/gallery/img14.jpg" alt="Boy looking into class" title="Boy looking into class"  onclick="showmodel(this);" id="img014">
+  			<div class="overlay">
+  				<div class="text">
+  					Boy looking into class.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img15.jpg" alt="Studying in class" title="Studying in class"  onclick="showmodel(this);" id="img015">
+  			<div class="overlay">
+  				<div class="text">
+  					Studying in class.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img16.jpg" alt="boy at the well" title="boy at the well"  onclick="showmodel(this);" id="img016">
+  			<div class="overlay">
+  				<div class="text">
+  					boy at the well.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img17.jpg" alt="2 girls with there hands up in class" title="2 girls with there hands up in class"  onclick="showmodel(this);" id="img017">
+  			<div class="overlay">
+  				<div class="text">
+  					2 girls with there hands up in class
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img18.jpg" alt="girl at the desk with her bag" title="girl at the desk with her bag"  onclick="showmodel(this);" id="img018">
+  			<div class="overlay">
+  				<div class="text">
+  					girl at the desk with her bag.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img19.jpg" alt="girls in class" title="girls in class"  onclick="showmodel(this);" id="img019">
+  			<div class="overlay">
+  				<div class="text">
+  					girls in class.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img20.jpg" alt="girl and washing line" title="girl and washing line"  onclick="showmodel(this);" id="img020">
+  			<div class="overlay">
+  				<div class="text">
+  					girl and washing line.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img21.jpg" alt="father and children on bike" title="father and children on bike"  onclick="showmodel(this);" id="img021">
+  			<div class="overlay">
+  				<div class="text">
+  					father and children on bike.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img22.jpg" alt="children in village" title="children in village"  onclick="showmodel(this);" id="img022">
+  			<div class="overlay">
+  				<div class="text">
+  					children in village.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img23.jpg" alt="Children in class" title="Children in class"  onclick="showmodel(this);" id="img023">
+  			<div class="overlay">
+  				<div class="text">
+  					Children in class.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img24.jpg" alt="gilr and infant playing outside" title="gilr and infant playing outside"  onclick="showmodel(this);" id="img024">
+  			<div class="overlay">
+  				<div class="text">
+  					gilr and infant playing outside.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img25.jpg" alt="girl with schoolbag" title="girl with schoolbag"  onclick="showmodel(this);" id="img025">
+  			<div class="overlay">
+  				<div class="text">
+  					girl with schoolbag.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img26.jpg" alt="girl drawing in class" title="girl drawing in class"  onclick="showmodel(this);" id="img026">
+  			<div class="overlay">
+  				<div class="text">
+  					girl drawing in class.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img27.jpg" alt="girl drawing in class" title="girl drawing in class"  onclick="showmodel(this);" id="img027">
+  			<div class="overlay">
+  				<div class="text">
+  					girl drawing in class.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img28.jpg" alt="girl drawing in class" title="girl drawing in class"   onclick="showmodel(this);" id="img028">
+  			<div class="overlay">
+  				<div class="text">
+  					girl drawing in class.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img29.jpg" alt="Students in class" title="Students in class"   onclick="showmodel(this);" id="img029">
+  			<div class="overlay">
+  				<div class="text">
+  					Students in class.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img30.jpg" alt="girl tacking note" title="girl tacking note"  onclick="showmodel(this);" id="img030">
+  			<div class="overlay">
+  				<div class="text">
+  					girl tacking note.
+  				</div>
+  			</div>
+  		</div>
+  		<div class="img_col">
+  			<img src="img/gallery/img31.jpg" alt="girl praying" title="girl praying"  onclick="showmodel(this);" id="img031">
+  			<div class="overlay">
+  				<div class="text">
+  					girl praying.
+  				</div>
+  			</div>
+  		</div>
+      </div>
+    	<div id="myModal" class="modal">
+  		  <span class="close glyphicon glyphicon-remove"></span>
+  		  <img class="modal-content" id="img_model">
+  		  <div id="caption"></div>
+		  </div>
+  		<span class="clearfix"></span>
+  		<footer>
+        <div class="footer1">
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="https://www.btplc.com/mydonate/index.aspx" target="_blank">Donate</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="volenteer.html">Volunteer</a></li>
+          </ul>
+          <div class="social">Follow us :- 
+            <a href="https://www.facebook.com/vibhanshu.rai" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/Reeshanrai" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/Vibhanshurai" class="fa fa-linkedin"></a>
+            <a href="https://www.google.com/reeshanrai" class="fa fa-google-plus"></a>
+          </div>
+          <div class="footer2">&copy; Shanti Vidya Niketan<span class="glyphicon glyphicon-king pull-right"> &nbsp;Vibhanshu Rai &nbsp;</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery.1.js"></script>
+    <script type="text/javascript">
+	    $(function(){
+	      $("#menu_button").click(function(e){
+	        e.preventDefault();
+	        $(this).siblings(".navbar-nav").slideToggle();
+	        $(".contactus a").attr('href','contact.html');
+	        $(".contactus a span").addClass('hide');
+	      });
+	      
+	      $(window).resize(function(){
+	        if($(this).outerWidth()>768){
+	          $(".navbar-nav").css({"display":"block"});
+	          $(".contactus a").attr('href','#');
+	          $(".contactus a span").removeClass('hide');
+	        }else{
+	          $(".navbar-nav").css({"display":"none"});
+
+	        }
+	      });
+	    });
+	  </script>
+	</body>
+</html>

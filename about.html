@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="img\logo1.jpg" />
+  	<title> &#8286; SVN &rarr; Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/glyphicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/myscript.js"></script>
+  </head>
+  <body>
+    <div id="main" class="clearfix">
+      <header>
+
+        <!-- navigation bar starts here-->
+
+       <nav class="navbar">
+          <div class="container">
+            <div class="navbar-header">
+
+              <!-- button for hiding -->
+
+              <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" title="SVN School" alt="SVN">
+              </a>
+            </div>
+            <!-- navbar hiding button-->
+            <button id="menu_button" class="glyphicon glyphicon-menu-hamburger clearfix" type="button"></button>
+            <!-- hiding button ens here-->
+            <div class="navbar-nav">
+              <ul class="clearfix">
+              <!-- navigation keys -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="getInvolve.html">Get Involved</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul> 
+              <!--navigation keys end-->
+            </div>
+          </div>
+        </nav>    
+        <!--navigation bar End-->  
+      </header>
+      <button class="glyphicon glyphicon-menu-up" id="moveTop" type="button" onclick="moveTop();" title="Go To Top">
+      </button>
+      <!-- Containt of the page -->
+      <div class="container give_margin">
+        <div class="entity">
+          <h1 class="center"> Who We Are </h1>
+          <h3>SVN School is dedicated to improving the educational opportunities for the poor and marginalised children. We build schools and support communities by providing a free basic education for these children.</h3>
+          <p>SVN has a very strong sense of social purpose combined with a balanced sustainable model that focuses on educating children in post-conflict developing countries whilst stimulating global cultural exchange and understanding.</p>
+          <img src="img/aboutChilds.jpg">
+          <p>We are at a pivotal stage of our development, and have ambitious plans to grow and extend the impact on young people worldwide. SVN pilot phase (2009-11), driven by the effort of its founder working with indigenous people in remote Central India, has demonstrated the viability, affordability and strength of its model.</p>
+          <p>By actively partnering the newly built and run SVN community schools in poor and remote regions of the country with affluent ‘western’ schools and organisations, we have a sustainable model that works. SVN now has a genuine opportunity to expand its global reach.</p>
+          <span class="clearfix"></span>
+        </div>
+      </div>
+      <hr class="give_margin">
+      <div class="container">
+        <div class="center entity2">
+          <h2>Vision</h2>
+          <p>To teach the unreached: where children in remote and post-conflict areas have access to basic education and improved life chances.</p>
+          <br/>
+          <hr class="give_margin">
+          <h2>Mission</h2>
+          <p>We work with communities to build schools and develop local teachers, providing a low cost and sustainable way to teach the unreached.</p>
+        </div>
+      </div>
+      <span class="clearfix"></span>
+      <footer>
+        <div class="footer1">
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="https://www.btplc.com/mydonate/index.aspx" target="_blank">Donate</a></li>
+            <li><a href="contact.html" target=">Contact Us</a></li>
+            <li><a href="volenteer.html">Volunteer</a></li>
+          </ul>
+          <div class="social">Follow us :- 
+            <a href="https://www.facebook.com/vibhanshu.rai" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/Reeshanrai" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/Vibhanshurai" class="fa fa-linkedin"></a>
+            <a href="https://www.google.com/reeshanrai" class="fa fa-google-plus"></a>
+          </div>
+          <div class="footer2">&copy; Shanti Vidya Niketan<span class="glyphicon glyphicon-king pull-right">&nbsp;Vibhanshu Rai &nbsp;</span></div>
+        </div>
+      </footer>
+    </div> <!-- Main close -->
+    <script type="text/javascript" src="js/jquery.1.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("#menu_button").click(function(e){
+          e.preventDefault();
+          $(this).siblings(".navbar-nav").slideToggle();
+          $(".contactus a").attr('href','contact.html');
+          $(".contactus a span").addClass('hide');
+        });
+        
+        $(window).resize(function(){
+          if($(this).outerWidth()>768){
+            $(".navbar-nav").css({"display":"block"});
+            $(".contactus a").attr('href','#');
+            $(".contactus a span").removeClass('hide');
+          }else{
+            $(".navbar-nav").css({"display":"none"});
+
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

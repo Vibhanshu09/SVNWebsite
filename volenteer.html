@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="img\logo1.jpg" />
+  	<title> &#8286; SVN Charity School</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/glyphicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/myscript.js"></script>
+  </head>
+  <body>
+    <div id="main" class="clearfix">
+      <header>
+
+        <!-- navigation bar starts here-->
+
+       <nav class="navbar">
+          <div class="container">
+            <div class="navbar-header">
+
+              <!-- button for hiding -->
+
+              <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" title="SVN School" alt="SVN">
+              </a>
+            </div>
+            <!-- navbar hiding button-->
+            <button id="menu_button" class="glyphicon glyphicon-menu-hamburger clearfix" type="button"></button>
+            <!-- hiding button ens here-->
+            <div class="navbar-nav">
+              <ul class="clearfix">
+              <!-- navigation keys -->
+                <li><a href=""><span class="bold">Home</span></a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="getInvolve.html">Get Involved</a></li>
+                <li><a href="contact.html">Contact Us</a>
+                </li>
+              </ul> 
+
+              <!--navigation keys end-->
+            </div>
+          </div>
+        </nav>    
+        <!--navigation bar End-->  
+      </header>
+      <button class="glyphicon glyphicon-chevron-up" id="moveTop" type="button" onclick="moveTop();" title="Go To Top">
+      </button>
+      <!-- Containt of the page -->
+      <div class="img_slider"> <!-- Image slider / changer-->
+        <div class="slider">
+          <img src="img/volenteer.jpg" width="100%" height="550">
+          <div class="slogans">
+            <h3>Volunteer</h3>
+            <p>SVN volunteers are helping change lives right now – raising vital funds, developing valuable skills, experience and friendships along the way.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="containt2">
+          <h1>Why volunteer with SVN?</h1>
+          <p>SVN volunteers are helping change lives right now – raising vital funds, developing valuable skills, experience and friendships along the way</p>
+          <p>Be inspired by the genuine desire to reach out to support those who are less fortunate and be in the company of dedicated like-minded people – while improving your own skills portfolio too. We know time is precious. So use yours to do something important.</p>
+          <hr class="give_margin">
+          <h3>Work with SVN</h3>
+          <p>Have you got a specific professional skill that you think the SVN central team could use? If so, let us know about your experience so far and how much time you’re able to give.</p>
+          <hr class="give_margin">
+          <h3>Fundraise</h3>
+          <p>One of the biggest barrier to providing education in rural areas is finance. We would love to be your charity of choice, either through regular giving  or one-off donations. All the funds don’t have to come from you, so could you could give your time and energy by organising an event or sponsored activity and donate the proceeds to teaching the unreached.</p>
+          <p>Get in touch via <span class="mail_me">info@shantividyaniketan.org</span> and tell us what you are planning and we can link your donation to a specific project.</p>
+          <hr class="give_margin">
+          <h3>Other ways to help</h3>
+          <p>Tell others: We are always looking for new Partner Schools or donors to support our growing SVN Schools. Are you able to tell someone else about the work SVN is doing?</p>
+        </div>
+      </div>
+      <span class="clearfix"></span>
+      <footer>
+      <div class="footer1">
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="https://www.btplc.com/mydonate/index.aspx" target="_blank">Donate</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="volenteer.html">Volunteer</a></li>
+          </ul>
+          <div class="social">Follow us :- 
+          <a href="https://www.facebook.com/vibhanshu.rai" class="fa fa-facebook"></a>
+          <a href="https://www.twitter.com/Reeshanrai" class="fa fa-twitter"></a>
+          <a href="https://www.linkedin.com/Vibhanshurai" class="fa fa-linkedin"></a>
+          <a href="https://www.google.com/reeshanrai" class="fa fa-google-plus"></a>
+          </div>
+          <div class="footer2">&copy; Shanti Vidya Niketan<span class="glyphicon glyphicon-king pull-right"> &nbsp;Vibhanshu Rai &nbsp;</span>
+          </div>
+        </div>
+      </footer>
+    </div> <!-- class main close -->
+    <script type="text/javascript" src="js/jquery.1.js"></script>
+    <script type="text/javascript">slideMe();</script>
+    <script type="text/javascript">
+      $(function(){
+        $("#menu_button").click(function(e){
+          e.preventDefault();
+          $(this).siblings(".navbar-nav").slideToggle();
+          $(".contactus a").attr('href','contact.html');
+          $(".contactus a span").addClass('hide');
+        });
+        
+        $(window).resize(function(){
+          if($(this).outerWidth()>768){
+            $(".navbar-nav").css({"display":"block"});
+            $(".contactus a").attr('href','#');
+            $(".contactus a span").removeClass('hide');
+          }else{
+            $(".navbar-nav").css({"display":"none"});
+
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
